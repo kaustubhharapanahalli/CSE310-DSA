@@ -5,6 +5,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#include <cstring>
 #include <iostream>
 
 #include "insertion_sort.hpp"  // NOLINT
@@ -18,24 +19,32 @@ int main(int argc, char *argv[]) {
   int print_result, print_array_at_each_step;
 
   if (argc < 3) {
-    std::cout << "Usage: run alg flag" << std::endl;
-    std::cout << "\talg is in {InsertionSort, MergeSort, QuickSort}"
+    std::cout << "Usage: ./PJ1 alg flag" << std::endl;
+    std::cout << "       alg should be in {InsertionSort, MergeSort, QuickSort}"
               << std::endl;
-    std::cout << "\tflag is either 0 or 1" << std::endl;
+    std::cout << "       flag should be in {0, 1}" << std::endl;
+    exit(1);
   }
 
   if (strcmp(argv[1], "InsertionSort") && strcmp(argv[1], "MergeSort") &&
       strcmp(argv[1], "QuickSort")) {
-    std::cout << "Error: " << argv[1]
-              << " is NOT in {InsertionSort, MergeSort, QuickSort}"
+    // std::cout << "Error: " << argv[1]
+    //           << " is NOT in {InsertionSort, MergeSort, QuickSort}"
+    //           << std::endl;
+    std::cout << "Usage: ./PJ1 alg flag" << std::endl;
+    std::cout << "       alg should be in {InsertionSort, MergeSort, QuickSort}"
               << std::endl;
+    std::cout << "       flag should be in {0, 1}" << std::endl;
     exit(1);
   }
 
   flag = atoi(argv[2]);
 
   if (flag != 0 && flag != 1) {
-    std::cout << "Error: " << argv[2] << "NOT in {0, 1}" << std::endl;
+    std::cout << "Usage: ./PJ1 alg flag" << std::endl;
+    std::cout << "       alg should be in {InsertionSort, MergeSort, QuickSort}"
+              << std::endl;
+    std::cout << "       flag should be in {0, 1}" << std::endl;
     exit(1);
   }
 
@@ -49,7 +58,7 @@ int main(int argc, char *argv[]) {
 
   fp = fopen("INPUT.txt", "r");
   if (fp == NULL) {
-    fprintf(stderr, "Error: cannot open file INPUT.txt\n");
+    std::cout << "Error: cannot open file INPUT.txt" << std::endl;
     exit(1);
   }
 
@@ -60,7 +69,7 @@ int main(int argc, char *argv[]) {
   A = reinterpret_cast<int *>(malloc(n * sizeof(int)));
 
   if (A == NULL) {
-    fprintf(stderr, "Error: cannot allocate memory\n");
+    std::cout << "Error: cannot allocate memory" << std::endl;
     exit(1);
   }
 
@@ -76,7 +85,6 @@ int main(int argc, char *argv[]) {
       break;
 
     case 2:
-      count_EWC = 0;
       count_EWC = MergeSort(A, 0, n - 1, flag, print_array_at_each_step);
       break;
 
@@ -99,6 +107,8 @@ int main(int argc, char *argv[]) {
   }
 
   std::cout << "Number of EWCs: " << count_EWC << std::endl;
+
+  delete A;
 
   return 0;
 }

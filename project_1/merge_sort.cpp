@@ -6,15 +6,14 @@
 #include <iostream>
 
 int count_EWC = 0;
-// int list_elements[];
 
 int Merge(int list_of_numbers[], int const init_index, int const partition,
           int const final_index, int flag, int print_array_at_each_step) {
   int const sub_array_left = partition - init_index + 1;
   int const sub_array_right = final_index - partition;
 
-  int *left_array = new int[sub_array_left],
-      *right_array = new int[sub_array_right];
+  int *left_array = new int[sub_array_left - 1],
+      *right_array = new int[sub_array_right - 1];
 
   for (int i = 0; i < sub_array_left; i++) {
     left_array[i] = list_of_numbers[init_index + i];
@@ -80,6 +79,7 @@ int Merge(int list_of_numbers[], int const init_index, int const partition,
     list_of_numbers[merged_array_index] = left_array[sub_array_left_index];
     sub_array_left_index++;
     merged_array_index++;
+
     if (print_array_at_each_step) {
       std::cout << "A[" << init_index + 1 << ":" << final_index + 1 << "]: ";
       for (int i = init_index; i < final_index + 1; i++) {
@@ -94,6 +94,7 @@ int Merge(int list_of_numbers[], int const init_index, int const partition,
     list_of_numbers[merged_array_index] = right_array[sub_array_right_index];
     sub_array_left_index++;
     merged_array_index++;
+
     if (print_array_at_each_step) {
       std::cout << "A[" << init_index + 1 << ":" << final_index + 1 << "]: ";
       for (int i = init_index; i < final_index + 1; i++) {

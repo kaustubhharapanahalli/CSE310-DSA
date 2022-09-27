@@ -22,15 +22,6 @@ int InsertionSort(int list_of_numbers[], int number_of_elements, int flag,
         std::cout << "EWC: " << list_of_numbers[index_2] << " > " << key << "?"
                   << std::endl;
       }
-
-      if (print_array_at_each_step) {
-        std::cout << "A[1:" << number_of_elements << "]: ";
-        for (int i = 0; i < number_of_elements - 1; i++) {
-          std::cout << list_of_numbers[i] << " ";
-        }
-
-        std::cout << list_of_numbers[number_of_elements - 1] << std::endl;
-      }
     }
     while (index_2 >= 0 && list_of_numbers[index_2] > key) {
       count_EWC++;

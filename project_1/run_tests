@@ -9,7 +9,7 @@ pass=0
 
 function run_test {
 	echo "================== Start $1 ==================="
-	timeout 60 ./Execution
+	./Execution
 	system_output=$(echo $?)
 	
 	if [ $system_output -eq 0 ] || [ $system_output -eq 1 ]
