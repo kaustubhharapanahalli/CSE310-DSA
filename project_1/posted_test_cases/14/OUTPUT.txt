@@ -1,0 +1,6 @@
+EWC: 1 > 2?
+EWC: 2 > 3?
+EWC: 3 > 4?
+EWC: 4 > 5?
+A[1:5] after sorting: 1 2 3 4 5
+Number of EWCs: 4

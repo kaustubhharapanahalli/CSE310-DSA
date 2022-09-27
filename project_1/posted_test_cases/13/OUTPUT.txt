@@ -1,0 +1,2 @@
+A[1:5] after sorting: 1 2 3 4 5
+Number of EWCs: 4

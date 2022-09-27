@@ -1,0 +1,12 @@
+EWC: 5 <= 1?
+EWC: 4 <= 1?
+EWC: 3 <= 1?
+EWC: 2 <= 1?
+EWC: 4 <= 5?
+EWC: 3 <= 5?
+EWC: 2 <= 5?
+EWC: 4 <= 2?
+EWC: 3 <= 2?
+EWC: 3 <= 4?
+A[1:5] after sorting: 1 2 3 4 5
+Number of EWCs: 10
