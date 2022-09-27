@@ -1,0 +1,76 @@
+#!/bin/bash
+
+# run "chmod u+x run_tests" on this file to be able to run it
+# Execute using "./run_tests &> run_tests_output.txt"
+
+TEST_ERROR=0
+system_output=0
+pass=0
+
+function run_test {
+	echo "================== Start $1 ==================="
+	timeout 60 ./Execution
+	system_output=$(echo $?)
+	
+	if [ $system_output -eq 0 ] || [ $system_output -eq 1 ]
+	then
+		echo "$1 completed"
+		echo "Comparing generated output with expected output"
+		
+		# compare generated output with expected output
+		diff -q myOUTPUT.txt OUTPUT.txt
+		if [ $? -eq 0 ]
+		then
+			echo "Files are identical"
+			(($2+=1))
+		else
+			echo "Files are NOT identical"
+		fi
+	elif [ $system_output -eq 139 ]
+	then
+		echo "$1 had a segmentation fault"
+		TEST_ERROR=4   
+		#The error code for this is 139
+	else
+		echo "$1 went over a minute"
+		TEST_ERROR=2
+		#The error code is 124
+	fi
+}
+
+# Build project: -B forces everything to be rebuilt
+make -B
+
+if [ $? -ne 0 ]
+then
+	echo "Build failed for program"
+	TEST_ERROR=1
+else
+	echo "Build succeeded"
+	
+	echo "==============================================="
+	echo "------------ Run posted test cases ------------"
+	echo "==============================================="
+	for i in {1..38}
+	do
+		testcase="$i"
+		if [ $i -lt 10 ]
+		then
+			zero="0"
+			num="$i"
+			testcase="$zero$num"
+		fi
+		
+		cp posted_test_cases/$testcase/* .
+		chmod u+x Execution
+		
+		run_test $testcase pass
+		
+		rm Execution myOUTPUT.txt OUTPUT.txt
+	done
+
+	# Output number of test cases passed
+	echo "==============================================="
+	echo "---- Passed $pass/38 posted test cases total -----"
+	echo "==============================================="
+fi
