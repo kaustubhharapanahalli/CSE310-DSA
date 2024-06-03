@@ -1,0 +1,10 @@
+There is no path from 8 to 1.
+There is no path from 8 to 2.
+There is no path from 8 to 3.
+There is no path from 8 to 4.
+There is no path from 8 to 5.
+There is no path from 8 to 6.
+The shortest path from 8 to 7 is:
+[8:    0.00]-->[7:    3.00].
+The shortest path from 8 to 8 is:
+[8:    0.00].

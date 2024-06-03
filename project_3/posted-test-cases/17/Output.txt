@@ -1,0 +1,4 @@
+The shortest path from 6 to 5 is:
+[6:    0.00]-->[3:    7.00]-->[5:   11.00].
+The shortest path from 6 to 8 is:
+[6:    0.00]-->[7:    5.00]-->[8:    8.00].

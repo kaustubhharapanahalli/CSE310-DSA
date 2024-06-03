@@ -1,0 +1,6 @@
+#!/bin/bash
+cp $1/Commands .
+cp $1/Execution .
+Execution < Commands > Output.txt
+
+diff $1/Output.txt Output.txt

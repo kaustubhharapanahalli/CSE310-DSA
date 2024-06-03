@@ -1,0 +1,2 @@
+The length of the shortest path from 7 to 5 is:    15.00
+The length of the shortest path from 7 to 8 is:     3.00
