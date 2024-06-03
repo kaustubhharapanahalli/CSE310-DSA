@@ -1,0 +1,2 @@
+#!/bin/bash
+./PJ2 DoubleHeap 150 < Commands > Output.txt 2> Message.txt

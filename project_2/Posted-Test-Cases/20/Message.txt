@@ -1,0 +1,2 @@
+Error: Invalid position or newKey in DecreaseKey
+Error: Invalid command

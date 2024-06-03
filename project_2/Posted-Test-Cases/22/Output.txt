@@ -1,0 +1,6 @@
+ExtractMin: 1
+ExtractMin: 3
+ExtractMin: 4
+ExtractMin: 5
+capacity=80, size=2
+MinHeap: 6, 7

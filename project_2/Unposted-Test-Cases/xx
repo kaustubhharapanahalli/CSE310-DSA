@@ -1,0 +1,11 @@
+#!/bin/bash
+rm Message.txt Output.txt
+rm HEAPofile.txt
+cp $1/HEAPifile.txt .
+cp $1/Commands .
+cp $1/Execution .
+chmod +x Execution
+./Execution
+diff $1/Output.txt Output.txt
+diff $1/Message.txt Message.txt
+diff $1/HEAPofile.txt HEAPofile.txt

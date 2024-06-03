@@ -1,0 +1,5 @@
+capacity=80, size=6
+MaxHeap: 7, 5, 6, 3, 1, 4
+ExtractMax: 7
+capacity=80, size=5
+MaxHeap: 6, 5, 4, 3, 1

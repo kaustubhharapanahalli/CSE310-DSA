@@ -1,0 +1,2 @@
+#!/bin/bash
+./PJ2 MaxHeap < Commands > Output.txt 2> Message.txt

@@ -1,0 +1,7 @@
+capacity=80, size=6
+MaxHeap: 7, 5, 6, 3, 1, 4
+MinHeap: 1, 3, 4, 7, 5, 6
+ExtractMin: 1
+capacity=80, size=5
+MaxHeap: 7, 5, 6, 3, 4
+MinHeap: 3, 5, 4, 7, 6

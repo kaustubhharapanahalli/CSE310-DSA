@@ -1,0 +1,4 @@
+capacity=80, size=6
+MaxHeap: 7, 5, 6, 3, 1, 4
+capacity=80, size=6
+MaxHeap: 8, 5, 7, 3, 1, 6
