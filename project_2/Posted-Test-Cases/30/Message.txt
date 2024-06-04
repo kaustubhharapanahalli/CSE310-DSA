@@ -1,3 +1,0 @@
-Usage: ./PJ2 DataStructure Capacity
-       DataStructure should be in {MaxHeap, MinHeap, DoubleHeap}
-       Capacity must be a positive integer

@@ -1,6 +1,6 @@
-Read
-Print
-IncreaseKey 6 4
-Print
-Write
+SingleSource 3
+PrintPath 3 5
+PrintPath 5 3
+PrintPath 3 8
+PrintPath 8 3
 Stop

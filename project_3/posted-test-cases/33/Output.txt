@@ -1,1 +1,0 @@
-The length of the shortest path from 1 to 100 is:   230.60

@@ -1,3 +1,4 @@
-The shortest path from 1 to 5 is:
-[1:    0.00]-->[4:    5.00]-->[5:    7.00].
-There is no path from 1 to 8.
+capacity=80, size=6
+MaxHeap: 7, 5, 6, 3, 1, 4
+capacity=80, size=6
+MaxHeap: 7, 5, 6, 3, 1, 4

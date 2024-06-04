@@ -1,11 +1,6 @@
-Read
-Print
-ExtractMax
-ExtractMin
-ExtractMax
-ExtractMin
-ExtractMax
-ExtractMin
-Print
-Write
+SingleSource 3
+PrintLength 3 5
+PrintLength 5 3
+PrintLength 3 8
+PrintLength 8 3
 Stop

@@ -1,6 +1,5 @@
-SingleSource 7
-PrintPath 7 5
-PrintPath 5 7
-PrintPath 7 8
-PrintPath 8 7
+Print
+Read
+Print
+Write
 Stop

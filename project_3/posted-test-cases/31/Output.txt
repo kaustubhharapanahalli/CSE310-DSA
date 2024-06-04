@@ -1,1 +1,0 @@
-The length of the shortest path from 1 to 175813 is: 13116.27

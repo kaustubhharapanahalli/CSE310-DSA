@@ -1,6 +1,6 @@
-Read
-Print
-Insert 20
-Print
-Write
+SingleSource 2
+PrintPath 2 5
+PrintPath 5 2
+PrintPath 2 8
+PrintPath 8 2
 Stop

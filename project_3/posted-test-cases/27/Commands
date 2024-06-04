@@ -1,6 +1,6 @@
-SingleSource 6
-PrintPath 6 5
-PrintPath 5 6
-PrintPath 6 8
-PrintPath 8 6
+Read
+Print
+DecreaseKey 30 0
+Print
+Write
 Stop

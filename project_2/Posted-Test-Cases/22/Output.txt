@@ -1,6 +1,2 @@
-ExtractMin: 1
-ExtractMin: 3
-ExtractMin: 4
-ExtractMin: 5
-capacity=80, size=2
-MinHeap: 6, 7
+The length of the shortest path from 2 to 5 is:     5.00
+There is no path from 2 to 8.

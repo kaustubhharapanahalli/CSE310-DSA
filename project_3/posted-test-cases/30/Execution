@@ -1,2 +1,2 @@
 #!/bin/bash
-./PJ3 Undirected network02.txt
+./PJ2 MaxHeap < Commands > Output.txt 2> Message.txt

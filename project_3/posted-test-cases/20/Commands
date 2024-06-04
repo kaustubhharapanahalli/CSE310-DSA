@@ -1,6 +1,6 @@
-SingleSource 7
-PrintLength 7 5
-PrintLength 5 7
-PrintLength 7 8
-PrintLength 8 7
+Read
+DecreaseKey 2 9
+Insert
+Print
+Write
 Stop

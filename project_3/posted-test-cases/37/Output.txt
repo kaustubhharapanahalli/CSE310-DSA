@@ -1,1 +1,0 @@
-The length of the shortest path from 1 to 300 is:   601.67

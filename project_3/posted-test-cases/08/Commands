@@ -1,10 +1,6 @@
-SingleSource 8
-PrintPath 8 1
-PrintPath 8 2
-PrintPath 8 3
-PrintPath 8 4
-PrintPath 8 5
-PrintPath 8 6
-PrintPath 8 7
-PrintPath 8 8
+Read
+Print
+Insert 20
+Print
+Write
 Stop

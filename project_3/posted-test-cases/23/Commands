@@ -1,6 +1,11 @@
-SingleSource 3
-PrintPath 3 5
-PrintPath 5 3
-PrintPath 3 8
-PrintPath 8 3
+Read
+Print
+ExtractMax
+ExtractMax
+ExtractMax
+ExtractMax
+ExtractMax
+ExtractMax
+Print
+Write
 Stop

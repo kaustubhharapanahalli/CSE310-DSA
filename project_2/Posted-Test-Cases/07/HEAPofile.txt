@@ -1,3 +1,0 @@
-capacity=80, size=6
-MaxHeap: 7, 5, 6, 3, 1, -20
-MinHeap: -20, 3, 1, 7, 5, 6

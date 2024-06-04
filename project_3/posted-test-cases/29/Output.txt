@@ -1,3 +1,0 @@
-There is no path from 7 to 5.
-The shortest path from 7 to 8 is:
-[7:    0.00]-->[8:    3.00].

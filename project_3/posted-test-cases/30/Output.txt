@@ -1,2 +1,0 @@
-There is no path from 7 to 5.
-The length of the shortest path from 7 to 8 is:     3.00

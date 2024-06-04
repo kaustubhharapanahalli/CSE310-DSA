@@ -1,4 +1,0 @@
-Error: ExtractMax in a min heap or a null/empty heap
-Error: ExtractMax in a min heap or a null/empty heap
-Error: ExtractMax in a min heap or a null/empty heap
-Error: ExtractMax in a min heap or a null/empty heap

@@ -1,6 +1,11 @@
-SingleSource 4
-PrintPath 4 5
-PrintPath 5 4
-PrintPath 4 8
-PrintPath 8 4
+Read
+Print
+ExtractMin
+ExtractMin
+ExtractMin
+ExtractMin
+ExtractMin
+ExtractMin
+Print
+Write
 Stop

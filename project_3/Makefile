@@ -1,23 +1,23 @@
-EXEC = PJ2
+EXEC = PJ3
 CC = g++
 CFLAGS = -c -Wall
 
-$(EXEC) : clean main.o heap.o util.o
-	$(CC) -o $(EXEC) main.o heap.o util.o
+$(EXEC) : clean main.o graph.o minHeap.o
+	$(CC) -o $(EXEC) main.o graph.o minHeap.o
 	rm -rf main.o
-	rm -rf heap.o
-	rm -rf util.o
+	rm -rf graph.o
+	rm -rf minHeap.o
 
-main.o : main.cpp heap.cpp util.cpp 
-	$(CC) $(CFLAGS) main.cpp
+main.o : main.cc graph.cc
+	$(CC) $(CFLAGS) main.cc
 
-heap.o : heap.cpp
-	$(CC) $(CFLAGS) heap.cpp
+graph.o : graph.cc 
+	$(CC) $(CFLAGS) graph.cc
 
-util.o : util.cpp
-	$(CC) $(CFLAGS) util.cpp
+minHeap.o : minHeap.cc 
+	$(CC) $(CFLAGS) minHeap.cc
 
-build: main.o util.o heap.o
+build: main.o graph.o minHeap.o
 
 clean:
-	rm -rf PJ2
+	rm -rf PJ3

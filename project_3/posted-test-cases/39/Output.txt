@@ -1,1 +1,0 @@
-The length of the shortest path from 100 to 3000 is:  2129.68

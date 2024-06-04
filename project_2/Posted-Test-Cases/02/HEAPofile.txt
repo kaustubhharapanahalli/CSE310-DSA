@@ -1,2 +1,0 @@
-capacity=80, size=6
-MaxHeap: 7, 5, 6, 3, 1, 4
