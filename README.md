@@ -7,7 +7,7 @@ Structures and Algorithms taken during Fall 2022.
 
 Implementation of algorithms - Insertion Sort, Merge Sort and Quick Sort.
 
-**Execution command:** `make`
+**Build command:** `make`
 
 **Run Tests:** `./run_tests`
 
@@ -15,11 +15,19 @@ Implementation of algorithms - Insertion Sort, Merge Sort and Quick Sort.
 
 Implementation of algorithms - MinHeap and Dijkstra's Algorithm.
 
+**Build command:** `make`
+
+**Run Tests:** `./run_tests`
+
 ## Project 3
 
 Implementation of algorithms - MaxHeap and MinHeap
 
+**Build command:** `make`
+
+**Run Tests:** `./run_tests`
+
 ## Execution
 
-For executing projects 2 and 3, create Makefile and run_tests files similar to
-Project 1 and run the same commands provided above.
+For executing projects 2 and 3, create run_tests files similar to Project 1 and
+run the same commands provided above.
