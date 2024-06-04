@@ -8,6 +8,7 @@ Structures and Algorithms taken during Fall 2022.
 Implementation of algorithms - Insertion Sort, Merge Sort and Quick Sort.
 
 **Execution command:** `make`
+
 **Run Tests:** `./run_tests`
 
 ## Project 2
