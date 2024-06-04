@@ -1,0 +1,2 @@
+capacity=80, size=6
+MinHeap: 1, 3, 4, 7, 5, 6
